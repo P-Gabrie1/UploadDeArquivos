@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package version="1.0" xsi:schemaLocation="https://emsfs.autodesk.com/schema/manifest/1/0 https://emsfs.autodesk.com/schema/manifest/1/0/manifest.xsd" xmlns="https://emsfs.autodesk.com/schema/manifest/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Identity>
+        <Publisher>Autodesk, Inc.</Publisher>
+        <DisplayName>ODIS Installer - August</DisplayName>
+        <PLC>AUTODESKINSTALLSERVICE</PLC>
+        <Release>2020</Release>
+        <BuildNumber envvar="BUILDNUMBER">1.44.0.502</BuildNumber>
+        <UPI2>{ACFF5B80-34D7-3E08-A65A-7F275931C8C6}</UPI2>
+        <UpgradeCode>{BEC01EA1-3942-3A39-9863-47536D7CDEB1}</UpgradeCode>
+        <ConstantId>{62EC12C0-F7B3-11EA-ADC1-0242AC120002}</ConstantId>
+        <Signature>j71DAk5plZ7ULaLbU5vWIlH/bSNMwhMpj9gbqGHerZ8=</Signature>
+        <Type>COM</Type>
+    </Identity>
+    <Resources/>
+    <Configuration>
+        <InstallFile type="EXE" contents="File" installParams="" file="AdODIS-installer.exe"/>
+        <AdditionalPackageInfo/>
+        <Attributes diskCost="0" majorUpgrade="true" useLatestVersion="true"/>
+        <Conditions>
+            <Condition messageId="IS_ODIS_UPDATE_TO_DATE" state="INSTALLED"><![CDATA[(( %ADSK_IS_ODIS_INSTALLED% = 1 ) AND ( %ADSK_INSTALLED_ODIS_VERSION% >= 1.44.0.502 ))]]></Condition>
+        </Conditions>
+        <Platforms>
+            <Platform name="Windows" architecture="x64" minVersion="5.1.2"/>
+        </Platforms>
+        <Languages languageNeutral="true"/>
+        <TimeoutInterval>540</TimeoutInterval>
+    </Configuration>
+    <Payload sizePacked="329264240" sizeUnpacked="329264240">
+        <File checkSum="F508D066C27343697763D4006E6AC45545C5AB24D4357B49A9F2CAD21FE354A0" sizePacked="329264240" sizeUnpacked="329264240">https://up1.autodesk.com/2020/AUTODESKINSTALLSERVICE/ACFF5B80-34D7-3E08-A65A-7F275931C8C6/AdODIS-installer.exe</File>
+    </Payload>
+</Package>
